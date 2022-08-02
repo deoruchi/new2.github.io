@@ -72,6 +72,7 @@ form input{
     margin: 2% 5%;
     border: solid 1px;
     border-color: hwb(0 59% 19% / 0.562);
+    background-color: transparent;
 }
 form button{
     position: absolute;
