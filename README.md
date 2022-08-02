@@ -83,8 +83,7 @@ This project just taught me a little about form validation,I will be exploring r
 ### Useful resources
 
 - [Email Validation using javascript](https://www.w3resource.com/javascript/form/email-validation.php) - This was really helpful.
-- [Form Validation](https://www.youtube.com/watch?v=fQ9QkBGohLw) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [Form Validation](https://www.youtube.com/watch?v=fQ9QkBGohLw) - This is an amazing video on form validation.
 
 ## Author
 
