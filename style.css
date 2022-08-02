@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+body{
+    width: 100%;
+    height: 100%;
+  background-color: hsl(0, 100%, 98%);
+}
+main{
+    text-align: center;
+}
+.container{
+    margin-top:23px ;
+    text-align: center;
+    padding: 5%;
+}
+
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color:hsl(0, 6%, 24%);
+}
+
+h1 > span{
+    font-weight: 300;
+    display: block;
+    color:  hsl(0, 36%, 70%);
+}
+.container p{
+    color: hsl(0, 22%, 48%);
+    font-size: 14px;
+    font-weight: 350;
+    margin-top: 5%;
+}
+.mobile{
+    width: 100%;
+}
+section{
+    padding: 24px;
+    text-align: left;
+}
+
+section>img{
+    width: 100px;
+}
+form{
+    position: relative;
+}
+form input{
+    position: relative;
+    width:85%;
+    padding: 12px;
+    border-radius: 50px;
+    margin: 2% 5%;
+    border: solid 1px;
+    border-color: hwb(0 59% 19% / 0.562);
+}
+form button{
+    position: absolute;
+    background: linear-gradient(to right , hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border-radius: 50px;
+    border: none;
+    width: 20%;
+    padding: 10px;
+    right:4%;
+    top:12%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    border-color: hsl(0, 6%, 24%);
+    cursor: pointer;
+}
+/*inserting no outline when we click the input box and there is change in color of the border*/
+form input:focus{
+    outline :none;
+    border-color: hsl(0, 22%, 48%);
+}
+
+
+.desktop{
+    display: none;
+}
+#text{
+    display: block;
+    color: red;
+    position: relative;
+    left:10%;
+    text-align: left;
+}
+.error{
+    display: block;
+    visibility: hidden;
+    position:absolute;
+    top:30%;
+    right:23%;
+}
+
+
+@media  (min-width:1024px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        
+    }
+    body{
+        display: flex;
+        flex-direction: row;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment:local;
+    }
+   
+    @keyframes ani{
+        0%{
+            background-position: left;
+        }
+        50%{
+             
+            background-position: right bottom;
+        }
+        
+        80%{
+            background-position: right left;
+        }
+        100%{
+            background-position: left;
+        }
+    }
+  
+    main{
+        margin: 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items:flex-start ;
+        padding: 5%;
+        
+        
+    
+    }
+    form button{
+        background-position: left;
+        background-image: linear-gradient( 135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+        animation: ani 20s infinite alternate;
+        background-size: 400%;
+    }
+    main > section>img{
+        width: 100%;
+    }
+    h1{
+        font-size: 64px;
+        text-align: left;
+        
+    }
+    .container p{
+        font-size: 25px;
+        text-align: left;
+    }
+    form input{
+        font-size: 20px;
+        padding: 20px;
+        margin-left: 5%;
+        width: 28vw;
+    }
+    form button{
+        right: -10%;
+        padding: 20px;
+        width: 30%;
+        top:10%;
+        height:85%;
+    }
+}
