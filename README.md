@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/kurokurotho/base_apparel.github.io.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/kurokurotho/new2.github.io.git)
+- Live Site URL: [Live](https://kurokurotho.github.io/new2.github.io/)
 
 ## My process
 
